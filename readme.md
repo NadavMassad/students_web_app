@@ -31,7 +31,8 @@ We have 2 end-points:
 1. For GET and POST methods.
 2. For PUT method.
 
-The GET method calls the `load_data()` function that will read from the josn file and return us the 
+The GET method calls the `load_data()` function that will read from the json fileif he exists.
+If it doesn't exists it creates it, and if it's empty, it gives it an empty list. Next the function return us the 
 students list from the json file.
 The POST method gets the name and the email from the user, and set the grades to 0 at first.
 The PUT method updates the grades of the students.
